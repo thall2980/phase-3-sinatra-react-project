@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2022_10_24_135141) do
     t.string "breed"
     t.string "temperament"
     t.integer "age"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(version: 2022_10_24_135141) do
     t.string "name"
     t.integer "years_of_experience"
     t.string "pace"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
