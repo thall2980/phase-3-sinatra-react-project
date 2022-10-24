@@ -1,8 +1,8 @@
 puts "🌱 Seeding walkers..."
 
-Walker.create(name: "Steve", years_of_experience: 3, pace: "fast")
-Walker.create(name: "Rachel", years_of_experience: 1, pace: "slow")
-Walker.create(name: "Caroline", years_of_experience: 5, pace: "medium")
+Walker.create(name: "Steve", years_of_experience: 3, pace: "fast", image: "https://t3.ftcdn.net/jpg/02/22/85/16/360_F_222851624_jfoMGbJxwRi5AWGdPgXKSABMnzCQo9RN.jpg")
+Walker.create(name: "Rachel", years_of_experience: 1, pace: "slow", image: "https://media.istockphoto.com/photos/glasses-girl-in-white-picture-id1089633230?k=20&m=1089633230&s=612x612&w=0&h=LNxo51TlLc-a8hNjJk5foJC9CI842yor3RvgNosIuKw=")
+Walker.create(name: "Caroline", years_of_experience: 5, pace: "medium", image: "https://media.istockphoto.com/photos/happy-millennial-afro-american-business-woman-posing-isolated-on-picture-id1386479313?b=1&k=20&m=1386479313&s=170667a&w=0&h=axEYGqmMKgDx8nk47CRAuGc27P1mnEu3zDJCdK7WlsE=")
 
 puts "🌱 Seeding dogs..."
 
