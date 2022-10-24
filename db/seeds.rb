@@ -1,8 +1,8 @@
 puts "🌱 Seeding walkers..."
 
-Walker.create(name: "Steve", years_of_experience: 3, pace: fast)
-Walker.create(name: "Rachel", years_of_experience: 1, pace: slow)
-Walker.create(name: "Caroline", years_of_experience: 5, pace: medium)
+Walker.create(name: "Steve", years_of_experience: 3, pace: "fast")
+Walker.create(name: "Rachel", years_of_experience: 1, pace: "slow")
+Walker.create(name: "Caroline", years_of_experience: 5, pace: "medium")
 
 puts "🌱 Seeding dogs..."
 
