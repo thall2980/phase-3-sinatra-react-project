@@ -6,6 +6,11 @@ class DogController < ApplicationController
         dogs.to_json
     end
 
+    get "/dogs/:id" do
+        dog = Dog.find(params[:id]) 
+        dog.to_json
+    end
+
     delete "/dogs/:id" do
         dog = Dog.find(params[:id])
         dog.destroy
