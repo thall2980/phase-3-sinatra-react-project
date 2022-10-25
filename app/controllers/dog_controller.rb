@@ -22,7 +22,8 @@ class DogController < ApplicationController
             owner: params[:owner],
             breed: params[:breed],
             temperament: params[:temperament],
-            age: params[:age]
+            age: params[:age],
+            image: params[:image]
         )
         new_dog.to_json
     end
