@@ -3,15 +3,17 @@ class AppointmentController < ApplicationController
 
     get "/appointments" do
         appointments = Appointment.all
-        appointments.to_json
+        appointments.to_json(include: :walker)
     end
 
     post "/appointments" do
         appointment = Appointment.create(
-            date: params[:id],
+            date: params[:date],
             dog_id: params[:dog_id],
             walker_id: params[:walker_id],
         )
-        appointment.to_json
-    end
+        newArray = []
+        newArray << appointment
+        newArray.to_json(include: :walker)
+        end
 end
