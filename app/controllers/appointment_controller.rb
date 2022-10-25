@@ -3,7 +3,10 @@ class AppointmentController < ApplicationController
 
     get "/appointments" do
         appointments = Appointment.all
-        appointments.to_json(include: :walker)
+        appointments.to_json(include: [
+            :walker,
+            :dog
+    ])
     end
 
     post "/appointments" do
@@ -14,6 +17,9 @@ class AppointmentController < ApplicationController
         )
         newArray = []
         newArray << appointment
-        newArray.to_json(include: :walker)
+        newArray.to_json(include: [
+            :walker,
+            :dog
+    ])
         end
 end
