@@ -9,6 +9,12 @@ class AppointmentController < ApplicationController
     ])
     end
 
+    delete "/appointments/:id" do
+        appointment = Appointment.find(params[:id])
+        appointment.destroy
+        appointment.to_json
+    end
+
     post "/appointments" do
         appointment = Appointment.create(
             date: params[:date],

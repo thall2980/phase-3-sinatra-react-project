@@ -30,7 +30,14 @@ class DogController < ApplicationController
     
     patch "/dogs/:id" do
         dog = Dog.find(params[:id])
-        dog.update(params)
+        dog.update(
+            name: params[:name],
+            owner: params[:owner],
+            breed: params[:breed],
+            temperament: params[:temperament],
+            age: params[:age],
+            image: params[:image]
+        )
         dog.to_json
     end
 end
