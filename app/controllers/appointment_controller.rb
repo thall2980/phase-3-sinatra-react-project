@@ -2,7 +2,7 @@ class AppointmentController < ApplicationController
     set :default_content_type, 'application/json'
 
     get "/appointments" do
-        appointments = Appointment.all
+        appointments = Appointment.all.order(:date)
         appointments.to_json(include: [
             :walker,
             :dog
@@ -17,7 +17,7 @@ class AppointmentController < ApplicationController
 
     post "/appointments" do
         appointment = Appointment.create(
-            date: params[:date],
+            date: Date.parse(params[:date]),
             dog_id: params[:dog_id],
             walker_id: params[:walker_id],
         )

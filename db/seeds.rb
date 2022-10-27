@@ -17,14 +17,14 @@ Dog.create(name: "Chase", owner: "Tyler", breed: "Blue Nose Pitbull", temperamen
 
 puts "🌱 Seeding appointments..."
 
-Appointment.create(date: "10-26-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "10-28-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "10-30-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "10-31-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "11-15-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "11-21-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "11-30-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "12-05-2022", dog_id:rand(1..8), walker_id:rand(1..3))
-Appointment.create(date: "12-10-2022", dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-10-22"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-10-28"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-10-30"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-10-31"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-11-15"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-11-22"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-11-30"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-12-05"), dog_id:rand(1..8), walker_id:rand(1..3))
+Appointment.create(date: Date.parse("2022-12-10"), dog_id:rand(1..8), walker_id:rand(1..3))
 
 puts "✅ Done seeding!"
